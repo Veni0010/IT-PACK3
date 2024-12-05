@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Layer Motion Slideshow | Codrops</title>
+		<meta name="description" content="A slideshow with a layer motion parallax effect and a different grid layout for every slide" />
+		<meta name="keywords" content="css grid, slideshow, parallax, layout, template, web design, web development, javascript" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="https://use.typekit.net/fib4tsw.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		<script src="analytics.js"></script>
+		<style>
+			body.cda-noimg #cdawrap {
+				--cda-width: 300px;
+				--cda-left: 2rem;
+				--cda-right: auto;
+				--cda-top: 5.5rem;
+				--cda-bottom: auto;
+				--cda-background: transparent;
+				padding: 0;
+				--cda-border-width: 0;
+				font-family: inherit;
+				font-size: 0.85rem;
+				--cda-text-weight: inherit;
+				transform: translateX(-10000000%);
+			}
+		</style>
+	</head>
+	<body class="loading cda-noimg cda-removeleft">
+		<svg class="hidden">
+			<symbol id="icon-arrow" viewBox="0 0 24 24">
+				<title>arrow</title>
+				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
+			</symbol>
+			<symbol id="icon-nav" viewBox="0 0 407 660">
+				<title>caret</title>
+				<path d="M77 0L0 77l253 253L0 583l77 77 330-330z"/>
+			</symbol>
+		</svg>
+		<main>
+			<div class="frame">
+				<div class="frame__title-wrap">
+					<img src="img/logo.png" alt="" srcset="" class="header_logo">
+					<div class="nav">
+						<div class="nav__counter">
+							<span>0</span>/<span>0</span>
+						</div>
+						<div class="nav__arrows">
+							<button class="nav__arrow nav__arrow--prev" data-hover>
+								<svg class="icon icon--rotated icon--nav"><use xlink:href="#icon-nav"></use></svg>
+							</button>
+							<button class="nav__arrow nav__arrow--next" data-hover>
+								<svg class="icon icon--nav"><use xlink:href="#icon-nav"></use></svg>
+							</button>
+						</div>
+					</div>
+				</div><!-- /frame__title-wrap -->
+				<div class="frame__links">
+					<a href="#" title="Back to the article" data-hover style="color: rgb(255, 96, 96);">Услуги</a>
+					<a href="../index.html" title="Find this project on GitHub" data-hover>На главную</a>
+				</div>
+			</div><!--/frame-->
+			<div class="slideshow">
+				<div class="slide slide--layout-4" data-contentcolor="#000000">
+					<div class="slide__figure slide__figure--main" data-sort="4">
+						<div class="slide__figure-img" style="background-image: url(img/services.png)"></div>
+					</div>
+					<div class="slide__figure slide__figure--box" data-sort="3">
+						<div class="slide__figure-img" style="background-image: url(img/services1.png)"></div>
+					</div>
+					<div class="slide__figure slide__figure--box" data-sort="2">
+						<div class="slide__figure-img" style="background-image: url(img/services2.jpg)"></div>
+					</div>
+					<div class="slide__figure slide__figure--box" data-sort="1">
+						<div class="slide__figure-img" style="background-image: url(img/services3.png)"></div>
+					</div>
+					<h2 class="slide__title">IT-PACK</h2>
+					</h2>
+					<div class="slide__text slide__text--right">
+						<p class="slide__text-meta" style="color: #fff;">Технические и организационные решения</p>
+						<p class="slide__text-description">Направленные на обеспечение безопаснойб стаблиьной и эффективной работы ИТ- структуры предприятий</p>
+						<a class="slide__text-link" data-hover href="index.html#" style="color: rgb(255, 96, 96);">Подробнее</a>
+					</div>
+					<button class="slide__back" data-hover>
+						<svg class="icon icon--back"><use xlink:href="#icon-arrow"></use></svg>
+					</button>
+					<div class="slide__content">
+						<p>&#9998;  Создание корпоративной почты Предоставляем услуги по настройке корпоративной почты. Это помогает повысить профессионализм общения и улучшает доверие со стороны клиентов и партнеров. Настроенная корпоративная почта обеспечивает высокий уровень безопасности и позволяет интегрировать дополнительные инструменты для работы.</p>
+						<p>&#9998; Разработка сайтов Предлагаем создание веб-сайтов любой сложности: от лендингов до корпоративных порталов. Мы учитываем потребности бизнеса, создаем адаптивный дизайн и разрабатываем удобный интерфейс, чтобы обеспечить лучший пользовательский опыт. Наличие современного и функционального сайта помогает привлекать новых клиентов и повышать узнаваемость бренда.</p>
+						<p>&#9998; Готовые решения для бизнеса Включают в себя набор инструментов, необходимых для быстрого запуска и оптимизации бизнес-процессов. Это может быть CRM-система, управление проектами или ERP-платформа. Готовые решения помогают сократить время внедрения и снизить затраты на разработку с нуля.</p>
+						<p>&#9998; ПО для общепита и магазинов Устанавливаем и настраиваем специализированные программы для автоматизации торговли и ресторанного бизнеса (например, системы учета продаж, инвентаризация и управление персоналом). Эти решения упрощают управление процессами и повышают эффективность работы.
+						</p>
+						<p>&#9998; Внедрение 1С Предоставляем услуги по установке и настройке программного обеспечения 1С для автоматизации бухгалтерского учета, управления торговлей, производства и других бизнес-процессов. Внедрение 1С позволяет оптимизировать работу компании и сократить затраты на управление.
+						</p>
+						<p>&#9998; Корпоративная сеть (Active Directory) Проектируем и внедряем корпоративные сети на базе Active Directory, что позволяет централизованно управлять пользователями, группами, политиками безопасности и ресурсами. Это упрощает администрирование и повышает безопасность инфраструктуры.
+						</p>
+						<p>&#9998; Настройка и сопровождение серверов и рабочих станций Оказываем услуги по установке, настройке и регулярному обслуживанию серверов и рабочих станций. Сюда входит мониторинг производительности, устранение неполадок и обновление систем для бесперебойной работы компании.
+						</p>
+					</div>
+				</div>
+				<div class="slide slide--layout-4" data-contentcolor="#000">
+					<div class="slide__figure slide__figure--main" data-sort="4">
+						<div class="slide__figure-img" style="background-image: url(img/services7.png)"></div>
+					</div>
+					<div class="slide__figure slide__figure--box" data-sort="3">
+						<div class="slide__figure-img" style="background-image: url(img/services8.png)"></div>
+					</div>
+					<div class="slide__figure slide__figure--box" data-sort="2">
+						<div class="slide__figure-img" style="background-image: url(img/services9.png)"></div>
+					</div>
+					<div class="slide__figure slide__figure--box" data-sort="1">
+						<div class="slide__figure-img" style="background-image: url(img/Windows-Server-Remote-Desktop-Services.png)"></div>
+					</div>
+					<h2 class="slide__title">IT-PACK</h2>
+					</h2>
+					<div class="slide__text slide__text--right">
+						<p class="slide__text-meta" style="color: #fff;">Технические и организационные решения</p>
+						<p class="slide__text-description">Направленные на обеспечение безопаснойб стаблиьной и эффективной работы ИТ- структуры предприятий</p>
+						<a class="slide__text-link" data-hover href="index.html#" style="color: rgb(255, 96, 96);">Подробнее</a>
+					</div>
+					<button class="slide__back" data-hover>
+						<svg class="icon icon--back"><use xlink:href="#icon-arrow"></use></svg>
+					</button>
+					<div class="slide__content">
+						<p>&#9998; Установка камер видеонаблюдения Занимаемся установкой и настройкой систем видеонаблюдения для обеспечения безопасности офисов, складов и других помещений. Видеонаблюдение позволяет контролировать рабочие процессы и минимизировать риски.
+						</p>
+						<p>&#9998; Защита от утечки данных (DLP-система) Внедрение DLP-систем для защиты конфиденциальной информации от утечек и несанкционированного доступа. Это помогает предотвратить внутренние угрозы и обеспечивает соблюдение требований по безопасности данных.
+						</p>
+						<p>&#9998; Учёт рабочего времени Настройка систем для автоматического учета рабочего времени сотрудников. Позволяет контролировать рабочий график, повышать дисциплину и эффективность работы персонала.
+						</p>
+						<p>&#9998; Аутсорсинг IT-услуг Предоставляем полный спектр IT-услуг на условиях аутсорсинга. Это решение позволяет компаниям сосредоточиться на основном бизнесе, доверив технические задачи профессионалам. Мы обеспечиваем поддержку 24/7 и эффективное управление IT-инфраструктурой.
+						</p>
+						<p>&#9998; IT-поддержка и техническое обслуживание Оказываем услуги технической поддержки пользователей и администрирования инфраструктуры. Включает удаленную помощь, мониторинг систем, устранение неисправностей и регулярное обновление ПО.
+						</p>
+						<p>&#9998; Настройка и обслуживание серверов Профессиональная настройка серверов под нужды компании, регулярное обслуживание и мониторинг производительности. Обеспечиваем стабильную и безопасную работу серверных систем.
+						</p>
+						<p>&#9998; Консультации по внедрению информационных систем Проводим консультации по выбору и внедрению IT-решений, оптимальных для конкретного бизнеса. Помогаем выбрать подходящее ПО и технологии, чтобы повысить производительность и снизить затраты.
+						</p>
+					</div>
+				</div>
+				<!-- <div class="slide slide--layout-3" data-contentcolor="#dc9d7f">
+					<div class="slide__figure slide__figure--main" data-sort="1">
+						<div class="slide__figure-img" style="background-image: url(img/13.jpg)"></div>
+					</div>
+					<div class="slide__figure slide__figure--box" data-sort="2">
+						<div class="slide__figure-img" style="background-image: url(img/14.jpg)"></div>
+					</div>
+					<div class="slide__figure slide__figure--box" data-sort="3">
+						<div class="slide__figure-img" style="background-image: url(img/15.jpg)"></div>
+					</div>
+					<div class="slide__figure slide__figure--box" data-sort="4">
+						<div class="slide__figure-img" style="background-image: url(img/16.jpg)"></div>
+					</div>
+					<h2 class="slide__title">Zenosyne</h2>
+					</h2>
+					<div class="slide__text">
+						<p class="slide__text-meta">by Cindy Brighton on 2/21</p>
+						<p class="slide__text-description">A vast radiant beach and cooled jeweled moon. Couples naked race down by its quiet side. And we laugh like soft, mad children. Smug in the wooly cotton brains of infancy.</p>
+						<a class="slide__text-link" data-hover href="index.html#">+</a>
+					</div>
+					<button class="slide__back" data-hover>
+						<svg class="icon icon--back"><use xlink:href="#icon-arrow"></use></svg>
+					</button>
+					<div class="slide__content">
+						<p>What would one give for a few human touches in connexion with our old silver! We may imagine that our candlesticks of the year 1750 held the flickering wax candles which were guttering when the dawn broke when our great-great-grandfather lost his fortune at cards in the county of —, or maybe it was somebody else’s grandfather. But this is in the realms of fancy, and the fortune is literally fabulous. Why are there no George Morlands in the silversmith’s craft? Cannot the guilds dig out their romantic history from their archives? Just to think that our designer of candelabra and flagons ran a fine career on Hounslow Heath with gamesters and fighting men; or did he, just that once, have a duel with young Lord What’s-his-Name in the Guards, and pinked him? Did not the story get to White’s and to the Cocoa Tree Clubs, how the tradesman scored! But no such thing. All these initials of makers are empty of such vanities. We can do better with prints. Those who possess the engraved work of Ryland have the satisfaction of knowing that he was hounded by Bow Street runners and hid, like the modern Lefroy, at Stepney, and that he was hanged for forgery.</p>
+						<p>The scene may readily be imagined. The second of May 1696 had been fixed by Parliament as the last day in which the crowns, half-crowns, and shillings were to be received in payment of taxes for face value. The guards had to be called in to keep order. The Exchequer was besieged by a vast multitude from dawn to midnight. The Act provided that the money was to be brought in by before the 4th of May. The 3rd was a Sunday, therefore Saturday, the 2nd of May, was actually the last day.</p>
+						<p>A remarkable use of conjurators to confirm the evidence of witnesses occurs in 850 in a dispute between Cantius, Bishop of Siena, and Peter, Bishop of Arezzo, concerning certain parishes claimed by both. The occasion was a solemn one, for it was before a council held in Rome presided over jointly by Pope Leo IV. and the Emperor Louis II. Peter relied upon written charters, while Cantius produced witnesses. The Emperor pronounced the claim of the latter to be just, when he and twelve priests swore that the oaths of the witnesses were true and without deceit, whereupon the disputed parishes were adjudged to him.</p>
+					</div>
+				</div> -->
+				<div class="slide slide--layout-4" data-contentcolor="#000000">
+					<div class="slide__figure slide__figure--main" data-sort="4">
+						<div class="slide__figure-img" style="background-image: url(img/services.png)"></div>
+					</div>
+					<div class="slide__figure slide__figure--box" data-sort="3">
+						<div class="slide__figure-img" style="background-image: url(img/services1.png)"></div>
+					</div>
+					<div class="slide__figure slide__figure--box" data-sort="2">
+						<div class="slide__figure-img" style="background-image: url(img/services2.jpg)"></div>
+					</div>
+					<div class="slide__figure slide__figure--box" data-sort="1">
+						<div class="slide__figure-img" style="background-image: url(img/services3.png)"></div>
+					</div>
+					<h2 class="slide__title">IT-PACK</h2>
+					</h2>
+					<div class="slide__text slide__text--right">
+						<p class="slide__text-meta" style="color: #fff;">Технические и организационные решения</p>
+						<p class="slide__text-description">Направленные на обеспечение безопаснойб стаблиьной и эффективной работы ИТ- структуры предприятий</p>
+						<a class="slide__text-link" data-hover href="index.html#" style="color: rgb(255, 96, 96);">Подробнее</a>
+					</div>
+					<button class="slide__back" data-hover>
+						<svg class="icon icon--back"><use xlink:href="#icon-arrow"></use></svg>
+					</button>
+					<div class="slide__content">
+						<p>&#9998; Консалтинг и обучение Проводим IT-консалтинг и обучение сотрудников работе с новыми системами и технологиями. Это помогает ускорить процесс адаптации и повысить квалификацию персонала.
+						</p>
+						<p>&#9998; Автоматизация бизнес-процессов Автоматизируем повторяющиеся процессы и задачи с помощью специализированного ПО. Это позволяет минимизировать ошибки, улучшить контроль и сократить время выполнения рутинных операций.
+						</p>
+						<p>&#9998; Облачные решения и виртуализация Предоставляем услуги по миграции в облако, настройке виртуальных машин и управлению виртуализированной инфраструктурой. Это улучшает гибкость и масштабируемость IT-инфраструктуры компании.
+						</p>
+						<p>&#9998; Кибербезопасность Проводим аудит и внедрение мер по защите IT-инфраструктуры. Настраиваем системы защиты от вирусов, фишинга и других угроз, обеспечивая высокий уровень безопасности данных и рабочих процессов.
+						</p>
+						<p>&#9998; Закуп и подбор оборудования Оказываем помощь в подборе и закупке компьютерного и сетевого оборудования, включая серверы, рабочие станции, периферийные устройства и компоненты. Гарантируем качественный подбор техники в соответствии с нуждами компании для обеспечения бесперебойной работы.
+						</p>
+						<p>&#9998; Телефония Настраиваем и поддерживаем корпоративные системы телефонии, включая IP-телефонию и интеграцию с CRM-системами. Обеспечиваем качественную связь внутри компании и с внешними клиентами, что способствует улучшению коммуникаций и снижению затрат на связь.</p>
+						<p>&#9998; Выезд специалистов Предоставляем услуги выездных специалистов для устранения неполадок, установки оборудования, консультаций и проведения профилактических работ. Это удобно для компаний, которым требуется оперативная помощь на месте.
+						</p>
+						<p>&#9998; Обслуживание компьютерной техники Выполняем ремонт и техническое обслуживание компьютеров, включая переустановку операционных систем, замену комплектующих и настройку ПО. Регулярное обслуживание помогает поддерживать технику в рабочем состоянии и продлить срок ее службы.
+						</p>
+					</div>
+				</div>
+			</div><!--/slideshow-->
+		</main>
+		<div class="cursor">
+			<div class="cursor__inner cursor__inner--circle"></div>
+			<div class="cursor__inner cursor__inner--dot"></div>
+		</div>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/charming.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/demo.js"></script>
+		<script src="demoad.js"></script>
+	</body>
+</html>
